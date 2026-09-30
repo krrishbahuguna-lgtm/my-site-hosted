@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krrish</title>
+<meta name="description" content="Krrish. Student at T. A. Pai Management Institute. History and motorsports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e3b2f;--ink:#f1eee4;--mute:#a9c2b6;--brass:#d6ae55;--line:#2a5a4a;
+--head:"Big Shoulders Display",Impact,sans-serif;--body:"Spectral",Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.2rem/1.7 var(--body)}
+a{color:var(--brass)}
+a:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+.flag{height:28px;background:
+conic-gradient(var(--ink) 25%,var(--bg) 0 50%,var(--ink) 0 75%,var(--bg) 0) 0 0/28px 28px;
+opacity:.9;border-bottom:1px solid var(--line)}
+header{padding:4rem 0 3rem}
+h1{font:900 clamp(5rem,26vw,13rem)/.82 var(--head);letter-spacing:-.01em;margin:0;text-transform:uppercase;animation:in .9s ease-out both}
+@keyframes in{from{transform:translateX(-4%);opacity:0}to{transform:none;opacity:1}}
+.tag{font-size:1.4rem;margin:1.5rem 0 0;max-width:30rem}
+.tag em{color:var(--brass)}
+h2{font:700 2rem/1 var(--head);text-transform:uppercase;letter-spacing:.02em;margin:0 0 1rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+p{margin:.6rem 0;max-width:36rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.two h3{font:700 1.6rem var(--head);margin:0;color:var(--brass)}
+ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--brass)}
+li{padding:0 0 1.6rem 1.5rem;position:relative}
+li::before{content:"";position:absolute;left:-7px;top:.75rem;width:12px;height:12px;background:var(--bg);border:2px solid var(--brass);border-radius:50%}
+li b{font:700 1.6rem var(--head);letter-spacing:.02em;display:block;color:var(--brass)}
+.note{color:var(--mute);font-size:1rem}
+footer{padding:2rem 0 4rem;color:var(--mute);font-size:1rem;border-top:1px solid var(--line)}
+@media(max-width:36rem){.two{grid-template-columns:1fr;gap:1.5rem}}
+</style>
+</head>
+<body>
+<div class="flag" aria-hidden="true"></div>
+<div class="wrap">
+  <header>
+    <h1>Krrish</h1>
+    <p class="tag">Student at T. A. Pai Management Institute. I like <em>history</em> and I like <em>motorsports</em>.</p>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <p>I'm Krrish, a management student at T. A. Pai Management Institute (TAPMI) in Manipal.</p>
+    <p>Outside class I'm usually reading about the past or watching things go fast. Add a line or two here about your goals, your city, or what you're working on.</p>
+  </section>
+
+  <section>
+    <h2>What I'm into</h2>
+    <div class="two">
+      <div>
+        <h3>History</h3>
+        <p>I like knowing how things came to be, and why people did what they did.</p>
+      </div>
+      <div>
+        <h3>Motorsports</h3>
+        <p>Engineering, strategy and nerve, all decided in fractions of a second.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the two meet</h2>
+    <p>Racing has a long history of its own. A few dates I'd start with:</p>
+    <ol>
+      <li><b>1894</b>Paris to Rouen, often called the first motoring competition.</li>
+      <li><b>1911</b>The first Indianapolis 500 is run.</li>
+      <li><b>1950</b>The first Formula 1 World Championship race, at Silverstone.</li>
+    </ol>
+    <p class="note">Swap in your own favourites: a legendary season, a rivalry, a circuit with a story.</p>
+  </section>
+
+  <section>
+    <h2>Say hello</h2>
+    <p>Add your email or LinkedIn here, for example <a href="mailto:you@example.com">you@example.com</a>.</p>
+  </section>
+
+  <footer>&copy; <span id="y"></span> Krrish</footer>
+</div>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
